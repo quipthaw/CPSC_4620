@@ -1,0 +1,64 @@
+package CPSC4620.part3;
+
+/**
+ * Manning Graham
+ * CPSC 4620
+ * Project Part 3
+ * 12-01-2022
+ */
+
+
+public class Discount 
+{
+
+	private int DiscountID;
+	private String DiscountName;
+	private double Amount;
+	private boolean isPercent;
+	
+	public Discount(int discountID, String discountName, double amount, boolean isPercent) {
+		DiscountID = discountID;
+		DiscountName = discountName;
+		Amount = amount;
+		this.isPercent = isPercent;
+	}
+
+	public int getDiscountID() {
+		return DiscountID;
+	}
+
+	public String getDiscountName() {
+		return DiscountName;
+	}
+
+	public double getAmount() {
+		return Amount;
+	}
+
+	public boolean isPercent() {
+		return isPercent;
+	}
+
+	public void setDiscountID(int discountID) {
+		DiscountID = discountID;
+	}
+
+	public void setDiscountName(String discountName) {
+		DiscountName = discountName;
+	}
+
+	public void setAmount(double amount) {
+		Amount = amount;
+	}
+
+	public void setPercent(boolean isPercent) {
+		this.isPercent = isPercent;
+	}
+
+	@Override
+	public String toString() {
+		return "DiscountID=" + DiscountID + " | " + DiscountName + ", Amount= " + Amount
+				+ ", isPercent= " + isPercent;
+	}
+	
+}
